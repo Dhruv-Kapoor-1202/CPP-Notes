@@ -1,0 +1,22 @@
+DS Lab programs
+
+1. 1-D array
+	a. to insert an element at a specific position in an array 
+	b. to delete an element at a specific position in an array
+	c. find the smallest and largest element in an array
+	d. find the sum of even and sum of odd numbersin an arry
+	e. find an element using linear search in an array
+
+2. Matrix array
+	a. write a program to add/subtract 2 matrices
+	b. marix multiplication
+	c. transpose
+	d. sum of rows, sum of columns of a matrix
+	e. sum of diagonal elements
+
+3. C++ programs
+	a. + operator overloading
+	b. constructor
+	c. multilevel inheriance
+	d. pointer and pointer of pointer.
+	

@@ -1,0 +1,32 @@
+/* make scientific
+calculator. Use trig.
+and log. functions using 
+math h library*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+char choice;
+int a,b;
+cout<<"Enter value of a";
+cin>>a ;
+cout<<"Enter value of b";
+cin>>b;
+
+
+cout<<"which operation";
+cin>>choice;
+switch(choice)
+
+{
+    case 'a':
+    case '+':
+        cout<<"Sum="<<a+b;
+        break;
+    case '-':
+        cout<<"subtraction="<<a-b;
+}
+}

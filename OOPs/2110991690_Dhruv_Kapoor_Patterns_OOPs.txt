@@ -1,0 +1,308 @@
+//Patterns1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,n,k;
+    
+    cin>>n;
+    
+    for(i=n; i>=1; i--)
+    {
+        for(j=1; j<=n; j++)
+        {
+            if(j<=i)
+                cout<<j;
+            else
+                cout<<"*";
+                
+        }
+        
+        for(j=n; j>=1; j--)
+        {
+            if(j<=i)
+            {
+                cout<<j;
+                
+            }
+            else
+                cout<<"*";
+                
+        }
+        cout<<endl;
+    }
+}
+
+********************************************************************************
+//Patterns2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r;
+
+    cout << "Enter number of rows: ";
+    cin >> r;
+
+    for(int i = 1; i <= r; ++i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+********************************************************************************
+//Patterns3
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r;
+
+    cout << "Enter number of rows: ";
+    cin >> r;
+
+    for(int i = r; i >= 1; --i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    return 0;
+}
+
+********************************************************************************
+//Patterns4
+#include<iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+    int n,s,i,j;
+
+    cout<<"Enter number of rows: ";
+    cin>>n;
+    for(i = 1; i <= n; i++)
+    {
+        for(s=i; s<n; s++)
+        {
+            cout<<" ";
+            
+        }
+        
+        for(j=1; j<=(2*i-1); j++)
+        {
+            cout<<"*";
+            
+        }
+        
+        cout<<endl;
+    }
+
+}
+
+********************************************************************************
+//Patterns5
+#include <iostream>
+using namespace std;
+ 
+
+int main()
+{
+    int n;
+    cout<<"enter number: ";
+    cin>>n;
+   
+    for(int i=n; i>0; i--)
+    {
+      for(int j=0; j<=n; j++)
+      {
+        if (j>=i)
+        {
+          cout<<"*";
+        }
+        else
+        {
+          cout<<" ";
+        }
+      }
+      cout<<endl;
+    }
+    return 0;
+}
+
+********************************************************************************
+//Patterns6
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i, j, r, s;
+    cout<<"Enter the Number of Rows: ";
+    cin>>r;
+    s = r-1;
+    for(i=1; i<=r; i++)
+    {
+        for(j=1; j<=s; j++)
+            cout<<" ";
+        s--;
+        for(j=1; j<=(2*i-1); j++)
+            cout<<"*";
+        cout<<endl;
+    }
+    s=1;
+    for(i=1; i<=(r-1); i++)
+    {
+        for(j=1; j<=s; j++)
+            cout<<" ";
+        s++;
+        for(j=1; j<=(2*(r-i)-1); j++)
+            cout<<"*";
+        cout<<endl;
+    }
+    cout<<endl;
+    return 0;
+}
+
+********************************************************************************
+//Patterns7
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r,c,i,j;
+    cout<<"Enter number of Rows: ";
+    cin>>r;
+    cout<<"Enter number of Columns: ";
+    cin>>c;
+    
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<r;j++)
+        cout<<"*";
+        cout<<endl;
+        
+    }
+    
+    
+    
+}
+
+********************************************************************************
+//Patterns8
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //upper curtain
+    int i, j, n;
+    cin>>n;
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<(2*n); j++)
+        {
+            if (i+j<=n-1)
+            cout<<"*";
+            else 
+            cout<<" ";
+            if (i+n<=j)
+            cout<<"*";
+            else 
+            cout<<" ";
+        }
+    cout<<"\n";
+    }
+}
+
+********************************************************************************
+/Patterns9
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int i,j,n;
+    cin>>n;
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<(2*n); j++)
+        {
+            if(i>=j) 
+                cout<<"*";
+            else
+                cout<<" ";
+            if(i>=(2*n-1)-j)  
+                cout<<"*";
+            else
+                cout<<" ";
+        }
+        cout<<"\n";
+    }
+}
+
+********************************************************************************
+//Patterns10
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, j, n;
+    cin>>n;
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<(2*n); j++)
+        {
+            if (i+j<=n-1)
+            cout<<"*";
+            else 
+            cout<<" ";
+            if (i+n<=j)
+            cout<<"*";
+            else 
+            cout<<" ";
+        }
+    cout<<"\n";
+    }
+    
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<(2*n); j++)
+        {
+            if(i>=j) 
+                cout<<"*";
+            else
+                cout<<" ";
+            if(i>=(2*n-1)-j)  
+                cout<<"*";
+            else
+                cout<<" ";
+        }
+        cout<<"\n";
+    }
+}
+
+********************************************************************************
